@@ -1,0 +1,7 @@
+{
+  "name": "midexam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

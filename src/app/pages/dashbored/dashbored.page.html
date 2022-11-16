@@ -1,0 +1,138 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let u of user" style="padding:20px ; display: flex; justify-content: center; align-items: center;">
+    <div style="
+    width:100%;background-color:rgb(36, 35, 35) ;
+    margin-top: 20px;height: 180px;
+     border-radius:7px; padding: 8px;">
+     <div style="display: flex;" >
+      <div>
+        <ion-avatar>
+          <ion-img [src]="u.faceimg"></ion-img>
+        </ion-avatar>
+      </div>
+      <div style="display:flex; flex-direction: column; margin: 10px;">
+        <ion-label style="margin-bottom:7px; font-size:0.900rem ; color: rgb(86, 154, 86);">{{u.name}}</ion-label>
+        <ion-label style="font-size:0.900rem ; color: rgb(86, 154, 86);">{{u.id}}</ion-label>
+      </div>
+     </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col style="font-size:0.800rem ; color: rgb(86, 154, 86);">Nationlity</ion-col>
+          <ion-col style="font-size:0.800rem ; color: rgb(86, 154, 86);">Martial status</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col style="font-size:0.700rem ;">{{u.nationality}}</ion-col>
+          <ion-col style="font-size:0.700rem ;">{{u.Martialstatus}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col style="font-size:0.800rem ; color: rgb(86, 154, 86);">Date of Birth</ion-col>
+          <ion-col style="font-size:0.800rem ; color: rgb(86, 154, 86);">Blood Type</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col style="font-size:0.700rem ;">{{u.DOB}}</ion-col>
+          <ion-col style="font-size:0.700rem ;">{{u.BloodType}}</ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div style="border-radius: 7px;
+         background-color: rgb(36, 35, 35);
+         padding: 22px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 125px;">
+         <ion-icon name="card-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+         <ion-label style="top:9px; position: relative;">Driving licenses</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="border-radius: 7px;
+         background-color: rgb(36, 35, 35);
+         padding: 22px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 125px;">
+         <ion-icon name="car-sport-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+         <ion-label style="top:9px; position: relative;">Vehicles</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div style="border-radius: 7px;
+         background-color: rgb(36, 35, 35);
+         padding: 22px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 125px;">
+         <ion-icon name="car-sport-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+         <ion-label style="top:9px; position: relative;">Vehicles Insurance</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="border-radius: 7px;
+         background-color: rgb(36, 35, 35);
+         padding: 22px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 125px;">
+
+         <ion-icon name="alert-circle-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+         <ion-label style="top:9px; position: relative;">Traffic Violations</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div style="
+         border-radius: 7px;
+         background-color: rgb(36, 35, 35);
+         padding: 22px;
+         text-align: center;
+         display: flex;
+         width: 174px;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 125px;">
+         <ion-icon name="id-card-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+         <ion-label style="top:9px; position: relative;">Passports</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="
+         border-radius: 7px;
+         background-color: rgb(36, 35, 35);
+         padding: 22px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 125px;">
+         <ion-icon name="calendar-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+         <ion-label style="top:9px; position: relative;">Upcoming Appointments</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,6 +1,4 @@
 <ion-header [translucent]="true">
-<!--
-
 
   <ion-toolbar color="primary"
   style="
@@ -19,12 +17,10 @@
 
 
   </ion-toolbar>
--->
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-<!--
 
   <div style="display:flex; justify-content: space-between;">
     <div >
@@ -56,7 +52,7 @@
   </div>
 
 <div style="padding:20px ;" *ngFor="let u of user">
-  <ion-img [src]="u.image"></ion-img>
+  <ion-img [src]="u.idimage"></ion-img>
 
 </div>
 
@@ -89,43 +85,44 @@
 </div>
 
 <div style="margin: 20px 0 0 10px;">
-  <ion-label style=" color: rgb(86, 154, 86); ">Top Services</ion-label>
+  <ion-label style=" color: rgb(86, 154, 86);">Top Services</ion-label>
 
 </div>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div style="border-radius: 7px;
+       background-color: rgb(36, 35, 35);
+       padding: 22px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       height: 90px;">
 
-<div style="display:flex ;justify-content: center; flex-direction: row; flex-wrap: wrap;  ">
-
-  <div style=" width: 160px; height: 60px; background-color: #191817;
-  margin-left: 17px; border-radius: 10px; margin-top: 25px;
-   ">
-<div style="display:flex ; justify-content:center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 7px;">
- <ion-label style="font-size:0.900rem ;">Issue<br> Permits</ion-label>
-
-  <ion-button fill="clear"><ion-icon name="documents-outline"></ion-icon></ion-button>
- </div>
-
-
- </div>
-
-
- <div style=" width: 160px; height: 60px; background-color: #191817;
-  margin-left: 17px; border-radius: 10px; margin-top: 25px;
-   ">
-<div style="display:flex ; justify-content:center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 7px;">
- <ion-label style="font-size:0.900rem ;">Amblulance<br> Request</ion-label>
-
-  <ion-button fill="clear"><ion-icon name="medical"></ion-icon>
-  </ion-button>
- </div>
-
-
- </div>
-</div>
-
+       <ion-icon name="documents-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+       <ion-label style="top:9px; position: relative;">Issue Premits</ion-label>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div style="border-radius: 7px;
+       background-color: rgb(36, 35, 35);
+       padding: 22px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       height: 90px;">
+       <ion-icon name="medical-outline" style="width:100%; color:rgb(86, 154, 86);" size="large"></ion-icon>
+       <ion-label style="top:9px; position: relative;">AmbulanceRequest</ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 <div style="margin-top:30px; padding: 15px;">
-  <ion-img src="../../assets/B477D645-574F-4B8C-B7BA-CE1D79BE2747.jpeg"></ion-img>
+  <ion-img src="../../../assets/Ehasn.jpeg"></ion-img>
 </div>
--->
 
 </ion-content>
-

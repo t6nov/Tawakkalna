@@ -1,0 +1,53 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div style="
+    padding-left: 20px;
+     padding-top: 20px;
+      border-bottom: 1px solid white;
+       padding: 10px;
+        margin-top: 15px;">
+
+    <ion-label style="font-size: 1.400rem; font-weight: 700;">
+      Digital Documents
+    </ion-label>
+  </div>
+  <div style="margin-top:20px ; padding-left:10px;">
+    <ion-label>Personal documents</ion-label>
+  </div>
+
+  <div *ngFor="let u of user" style="margin-top: 20px;  ">
+    <div style="margin: 10px;">
+      <ion-label style="font-size:1.400rem ;
+       display: flex;
+       justify-content: center;
+       background-color: white;
+       color: rgb(26, 124, 4);
+       width: 70px;
+       border-radius: 6px;
+       border: 1px solid rgb(36, 191, 90);">ID</ion-label>
+
+
+    </div>
+    <ion-img [src]="u.idimage" style="padding:20px ;"></ion-img>
+    <div style="margin-top:20px ; padding-left:10px; padding-bottom: 8px;">
+      <ion-label>Vehicle documents</ion-label>
+    </div>
+
+    <div style="margin: 10px; display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgb(26, 124, 4);
+    width:149px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid rgb(36, 191, 90);">
+
+      <ion-label style="font-size:1.400rem ;">Driver License</ion-label>
+    </div>
+    <ion-img [src]="u.driverlie" style="padding:20px ;"></ion-img>
+  </div>
+
+</ion-content>
